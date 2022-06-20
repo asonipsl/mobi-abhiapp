@@ -7,7 +7,7 @@ services:
     build: . 
     container_name: abhicic1
     ports:
-    - "1111:80"
+    - "1125:80"
     restart: always 
     networks: # use bridge created above 
     - abhibr111
