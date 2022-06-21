@@ -1,13 +1,11 @@
 version: '3.8'
-networks: # to create a custom bridge
-  abhibr111: 
 services:
-  abhiapp007:
-    image: abhiciapp:v1 
+  abhishekapp:
+    image: abhicustomer1
     build: . 
-    container_name: abhicic1
+    container_name: abhicc001
     ports:
-    - "1125:80"
-    restart: always 
-    networks: # use bridge created above 
-    - abhibr111
+    - "1145:80"
+    restart: always
+    environment:
+      deploy: "app1"
